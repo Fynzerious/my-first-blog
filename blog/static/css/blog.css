@@ -1,0 +1,29 @@
+h1 a{
+    font-family: 'Lobster';
+    font-weight: bold;
+    color: #C25100;
+    font-size: 3.5rem;
+}
+
+h2 a {
+    color: #b200b5;
+}
+
+body {
+    padding-left: 15px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+time {
+    font-style: italic;
+    color: #707b7d;
+}
+
+p {
+    font-size: 1.5rem;
+}
