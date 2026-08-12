@@ -16,16 +16,18 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>      
-        <header>
-            <h1><a href="/">O Bloguinho do Afonso</a></h1>
+        <header class="page-header">
+            <div class="container">
+                <h1><a href="/">O Bloguinho do Afonso</a></h1>
+            </div>
         </header>
 
         {% for post in posts %}
-            <article>
-                <br><time>published: {{ post.published_date }}</time>
+            <article class="post">
+                <time>published: {{ post.published_date }}</time>
                 <br><time>por {{ post.author }}</time>
                 <h2><a href="">{{ post.title }}</a></h2>
-                <p>{{ post.text|linebreaksbr }}</p>
+                <p>{{ post.text|linebreaksbr }}</p><br>
             </article>
         {% endfor %}
     </body>
