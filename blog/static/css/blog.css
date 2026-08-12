@@ -45,3 +45,12 @@ time {
 p {
     font-size: 1.5rem;
 }
+
+.top-menu svg {
+    width: 32px;
+    height: 32px;
+}
+
+label {
+    vertical-align: top;
+}

@@ -2,7 +2,11 @@
 
 {% block content %}
     {% for post in posts %}
-        {% include 'blog/post_detail.html'%}
-        <br>
+        <article class="post">
+            <time class="date">
+                {{ post.published_date }}
+            </time>
+            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+        </article><br>
     {% endfor %}
 {% endblock %}
